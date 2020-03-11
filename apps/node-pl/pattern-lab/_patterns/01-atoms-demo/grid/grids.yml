@@ -1,0 +1,5 @@
+grid_demo_block:
+  title: Grid
+  text:
+    lead: The default grid pattern.
+    summary: Grids can be the primary element or nested content.

@@ -1,0 +1,61 @@
+{#
+/**
+ * @file
+ * grid
+ *
+ * Available variables for grid:
+ *  - grid.layout [string]: Designate the layout template.
+ *  - grid.column [boolean]: Designate the flex direction as column.
+ *  - grid.nested [boolean]: Designate whether a grid-inside-grid.
+ */
+#}
+
+{% set grid_attributes = grid_attributes|default({})|merge({
+  class: [
+    'grid',
+    grid.layout ? 'grid--' ~ grid.layout : FALSE,
+    'flex',
+    not grid.column ? 'flex-wrap' : FALSE,
+    grid.column ? 'flex-column' : FALSE,
+    grid_new_classes ? grid_new_classes|join(' ') : '',
+  ],
+}) %}
+
+{% set row_attributes = row_attributes|default({})|merge({
+  class: [
+    'row',
+    'w-full',
+    grid.nested ? '-mx-4' : FALSE,
+    row_new_classes ? row_new_classes|join(' ') : '',
+  ],
+}) %}
+
+{% set column_attributes = column_attributes|default({})|merge({
+  class: [
+    'col',
+    'px-2',
+    'w-full',
+    'sm:px-3',
+    'lg:px-4',
+    'xl:px-5',
+    column_new_classes ? column_new_classes|join(' ') : '',
+  ],
+}) %}
+
+<div {{ grid_attributes|attributify }}>
+  <div {{ row_attributes|attributify }}>
+
+    {# For simplicity, we can have multiple sub-layouts on a project-by-project basis. #}
+    {# A few simple defaults here can be implemented as layouts for Drupal theme. #}
+    {% if grid.layout == '50-50' %}
+      {% include '@atoms/grid/_layout--50-50.twig' with {
+        column_attributes: column_attributes,
+      } %}
+    {% else %}
+      <div {{ column_attributes|attributify }}>
+        {% block column_1 %}{% endblock column_1 %}
+      </div>
+    {% endif %}
+
+  </div>
+</div>
