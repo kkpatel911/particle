@@ -1,0 +1,54 @@
+// UTC Styles for Header Main Navigation
+
+@import "../../variables";
+
+.block--region-header-primary-menu  {
+  > ul.menu {
+    //@include list__reset;
+    //display: flex;
+    > li > a {
+      //padding: 15px;
+      //border-radius: .25rem;
+      //margin-right: 1px;
+      color: $utc-blue;
+      //font-weight: $main-navigation-font-weight;
+      //font-size: $main-navigation-font-size;
+      //line-height: 1;
+      //text-transform: $main-navigation-text-transform;
+      //transition: all .3s ease-in-out;
+      &:hover {
+        text-decoration: none;
+        background: $utc-blue;
+        color: $utc-yellow;
+      }
+    }
+    li.menu-item--active-trail > a {
+      //background: $main-navigation-link-active-bg;
+      //color: $main-navigation-link-active-color;
+    }
+  }
+}
+
+.block--region-header-primary-menu > ul.menu > li > a {
+  border-radius: 0;
+  padding: 12px;
+}
+.block--region-header-primary-menu > ul.menu > li > a:hover {
+  padding: 12px;
+}
+
+.tb-megamenu .dropdown-menu li > a {
+  color: $utc-blue;
+}
+
+.tb-megamenu .dropdown-menu li > a:hover,
+.tb-megamenu .dropdown-menu li > a:focus,
+.tb-megamenu .dropdown-submenu:hover > a,
+.tb-megamenu .dropdown-menu li > span.tb-megamenu-no-link:hover,
+.tb-megamenu .dropdown-menu li > span.tb-megamenu-no-link:focus,
+.tb-megamenu .dropdown-submenu:hover > span.tb-megamenu-no-link
+{
+  text-decoration: none;
+  background: $utc-blue;
+  color: $utc-yellow;
+}

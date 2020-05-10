@@ -1,0 +1,39 @@
+@import "../../variables";
+
+.aggregator-feed {
+  overflow-y: overlay;
+  height: 346.708px;
+  max-height: 346.708px;
+  //margin-left: 0;
+  width: 100%;
+}
+
+.accordion > .card .card-header {
+  background: $utc-blue;
+}
+
+#cardH > div > a {
+  color: whitesmoke;
+  font-weight: 600;
+}
+
+#cardH > a {
+  color: whitesmoke;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: none;
+}
+
+.card-header:hover {
+  background: $utc-blue;
+}
+
+.card-header {
+  background: $utc-blue;
+}
+
+
+
+// .themag-layout .block:not(:last-child) {
+//   margin-bottom: 0rem;
+// }

@@ -1,25 +1,26 @@
 name: Particle
 type: theme
 description: A Theme with Pattern Lab
-base theme: stable
+base theme: themag
 core: 8.x
 libraries:
   - particle/core
 libraries-override:
   core/jquery: particle/jquery
 regions:
-  primary_menu: Primary menu
-  highlighted: Highlighted
-  header_branding: Header branding
-  header_cta: Header CTA
-  secondary_menu: Secondary menu
-  page_top: Page top
-  page_bottom: Page bottom
-  breadcrumb: Breadcrumb
-  content: Content
-  sidebar_first: Sidebar first
-  sidebar_second: Sidebar second
-  footer: Footer
+  header_secondary_menu: 'Secondary menu'
+  logo: 'Logo'
+  header_primary_menu: 'Primary menu'
+  search: 'Search'
+  offcanvas_sidebar: 'Off-Canvas sidebar'
+  content_administration: 'Tabs'
+  content_header: 'Content Header'
+  content: 'Content'
+  footer_first: 'Footer first'
+  footer_second: 'Footer second'
+  footer_third: 'Footer third'
+  footer_bottom_first: 'Footer bottom first'
+  footer_bottom_second: 'Footer bottom second'
 component-libraries:
   protons:
     paths: []

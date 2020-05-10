@@ -1,0 +1,82 @@
+@import "../../variables";
+
+
+.financialaidtopvid {
+    background-image: url(https://www.utc.edu/financial-aid/images/finaid_bk1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 320px;
+    background-color: $background-colorone;
+    background-blend-mode: multiply;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-bottom: 20px;
+}
+
+.financialaidmenu-overlay {
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+}
+.financialaidtitle-overlay {
+    top: 75px;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+}
+
+.financialaidtitle-overlay h1 {
+    /* font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    color: $white;
+    font-size: 5vw;
+    line-height: 7vw;
+    text-shadow: $text-shadow;
+}
+
+.financialaidtitlemenu-overlay {
+    bottom: 0.5% !important;
+    background: $background-colortwo;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+}
+
+
+ul.financialaidinline > li, ol.financialaidinline > li {
+    display: inline-block;
+    zoom: 1;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.financialaidundergrad-btn:hover {
+    text-indent: 0;
+    background: $utc-darkyellow;
+    color: $white;
+  }
+.financialaidinline {
+
+    display: flex;
+    justify-content: center;
+    //padding-left: 5px;
+    //padding-right: 5px;
+    list-style-type: none;
+    margin: 10px 0 10px 25px;
+
+}
+
+.financialaidtop-buffer {
+    margin-top: 10px;
+}

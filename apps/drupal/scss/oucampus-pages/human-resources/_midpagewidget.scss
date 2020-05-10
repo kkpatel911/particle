@@ -1,0 +1,24 @@
+@import "../../variables";
+.humanresourcesparallax1 {
+    background-image: url(https://www.utc.edu/human-resources/images/human-resources-homepage-header.jpg);
+    /* min-height: 460px; */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background-color: $background-colorone;
+    background-blend-mode: multiply;
+    /* margin-bottom: 20px; */
+}
+
+#humanresourcesstudent_type_wrapper h1 {
+    color: $white;
+    font-size: 2.4em;
+    text-shadow: $text-shadow;
+}

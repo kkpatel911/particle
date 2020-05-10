@@ -1,0 +1,43 @@
+@import "../variables";
+
+.ckeditor-accordion-container > dl dt > a {
+  display: block;
+  font-size: 500;
+  //padding: 10px 15px 10px 50px;
+  background-color: $off-white;
+  color: $utc-darkgray;
+  cursor: pointer;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
+  border-bottom: 1px solid $utc-gray;
+  &:hover {
+    background-color: $utc-gray;
+    border-bottom: 0;
+    text-decoration: none;
+  }
+}
+
+.ckeditor-accordion-container > dl dt.active > a {
+  background-color: $utc-gray;
+  &:hover {
+    color: $utc-gray;
+    background-color: $utc-darkgray-2;
+  }
+}
+
+  /* contents */
+  .ckeditor-accordion-container > dl dd {
+    display: none;
+    padding: 0 15px;
+    margin: 0;
+    will-change: height;
+  }
+  .ckeditor-accordion-container > dl {
+    position: relative;
+    border: 0;
+}
+
+.ckeditor-accordion-container > dl dt > a > .ckeditor-accordion-toggle::before,
+.ckeditor-accordion-container > dl dt > a > .ckeditor-accordion-toggle::after {
+  background: $utc-darkgray;
+}

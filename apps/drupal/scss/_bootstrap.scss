@@ -1,0 +1,44 @@
+/*!
+ * Only Bootstrap styles required by the theme are included.
+ * If you wish to include some of the components, simply remove the comment.
+ * and recompile the style.
+ */
+
+// TheMAG variables will override Bootstrap default variables.
+//@import "variables";
+
+@import "../../../themag/themes/charm/vendor/bootstrap/scss/functions";
+@import "../../../themag/themes/charm/vendor/bootstrap/scss/variables";
+@import "../../../themag/themes/charm/vendor/bootstrap/scss/mixins";
+@import "../../../themag/themes/charm/vendor/bootstrap/scss/root";
+@import "../../../themag/themes/charm/vendor/bootstrap/scss/reboot";
+//@import "../../../themag/themes/charm/vendor/bootstrap/scss/type";
+//@import "../../../themag/themes/charm/vendor/bootstrap/scss/images";
+//@import "../../../themag/themes/charm/vendor/bootstrap/scss/code";
+@import "../../../themag/themes/charm/vendor/bootstrap/scss/grid";
+@import "../../../themag/themes/charm/vendor/bootstrap/scss/tables";
+//@import "../../../themag/themes/charm/vendor/bootstrap/scss/forms";
+@import "../../../themag/themes/charm/vendor/bootstrap/scss/buttons";
+@import "../../../themag/themes/charm/vendor/bootstrap/scss/transitions";
+//@import "../../../themag/themes/charm/vendor/bootstrap/scss/dropdown";
+//@import "../../../themag/themes/charm/vendor/bootstrap/scss/button-group";
+//@import "../../../themag/themes/charm/vendor/bootstrap/scss/input-group";
+//@import "../../../themag/themes/charm/vendor/bootstrap/scss/custom-forms";
+//@import "../../../themag/themes/charm/vendor/bootstrap/scss/nav";
+//@import "../../../themag/themes/charm/vendor/bootstrap/scss/navbar";
+@import "../../../themag/themes/charm/vendor/bootstrap/scss/card";
+//@import "../../../themag/themes/charm/vendor/bootstrap/scss/breadcrumb";
+//@import "../../../themag/themes/charm/vendor/bootstrap/scss/pagination";
+//@import "../../../themag/themes/charm/vendor/bootstrap/scss/badge";
+//@import "../../../themag/themes/charm/vendor/bootstrap/scss/jumbotron";
+//@import "../../../themag/themes/charm/vendor/bootstrap/scss/alert";
+//@import "../../../themag/themes/charm/vendor/bootstrap/scss/progress";
+//@import "../../../themag/themes/charm/vendor/bootstrap/scss/media";
+//@import "../../../themag/themes/charm/vendor/bootstrap/scss/list-group";
+//@import "../../../themag/themes/charm/vendor/bootstrap/scss/close";
+//@import "../../../themag/themes/charm/vendor/bootstrap/scss/modal";
+//@import "../../../themag/themes/charm/vendor/bootstrap/scss/tooltip";
+//@import "../../../themag/themes/charm/vendor/bootstrap/scss/popover";
+//@import "../../../themag/themes/charm/vendor/bootstrap/scss/carousel";
+@import "../../../themag/themes/charm/vendor/bootstrap/scss/utilities";
+//@import "../../../themag/themes/charm/vendor/bootstrap/scss/print";

@@ -22,48 +22,34 @@
 
 {#
   We call a macro which calls itself to render the full tree.
-  @see http://twig.sensiolabs.org/doc/tags/macro.html
+  @see https://twig.symfony.com/doc/1.x/tags/macro.html
 #}
 {{ menus.menu_links(items, attributes, 0) }}
 
 {% macro menu_links(items, attributes, menu_level) %}
   {% import _self as menus %}
-    {% if items %}
-
-    {# Add wrapper_classes array to style our unordered list below. #}
-    {% set wrapper_classes = [
-      'navbar-nav',
-      'mr-auto',
-    ] | sort | join(' ') | trim %}
-
+  {% if items %}
     {% if menu_level == 0 %}
-    <ul{{ attributes.addClass(wrapper_classes) }}>
-      {% else %}
-      <ul class="{{ wrapper_classes }}">
+      <ul{{ attributes.addClass('sidebar-menu') }}>
+    {% else %}
+      <ul class="sidebar-menu">
+    {% endif %}
+    {% for item in items %}
+      {%
+        set classes = [
+          'menu-item',
+          item.is_expanded ? 'menu-item--expanded',
+          item.is_collapsed ? 'menu-item--collapsed',
+          item.in_active_trail ? 'menu-item--active-trail',
+      ]
+      %}
+      <li{{ item.attributes.addClass(classes) }}>
+        {{ link(item.title, item.url) }}
+        {% if item.below %}
+          {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
         {% endif %}
-
-        {% for item in items %}
-
-          {# Sync Drupal and Bootstrap's active state classes. #}
-          {% set item_classes = [
-            item.in_active_trail ? 'active',
-          ] %}
-
-          {#  Include our pre-built Nav Items from Particle.
-              See particle/source/_patterns/02-molecules/nav/_nav-item.twig. #}
-          {% include '@molecules/nav/_nav-item.twig' with {
-            nav_item_element: 'li',
-            nav_item_classes: item_classes,
-            nav_item_link: item.url,
-            js_attributes: item.attributes,
-            nav_item_text: item.title,
-          } %}
-
-          {% if item.below %}
-            {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
-          {% endif %}
-
-        {% endfor %}
-      </ul>
-      {% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+  {% endif %}
 {% endmacro %}

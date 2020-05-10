@@ -1,0 +1,97 @@
+// UTC Styles for Internal Side Nav
+
+@import "../../variables";
+
+// styles two column layouts with left sidebar navigation
+  .utc-sidebar-people-finder {
+    ol, ul {
+      // background: $off-white;
+      list-style: none;
+      padding-left: 0;
+      li {
+        margin-bottom: 0.3em;
+        ul {
+          li {
+            &:first-child {
+              border-top: none;
+            }
+            margin: 0.3em auto;
+            ul {
+              li {
+                &:first-child {
+                  border-top: none;
+                }
+                margin: 0.3em auto;
+                }
+              }
+            }
+          }
+      }
+    }
+
+  .sidebar-menu li {
+    position: relative;
+  }
+
+  .sidebar-menu li ul {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    .menu-item-sidemenu a {
+      background-color: $utc-gray-2;
+    }
+  }
+
+  .menu-btn {
+    background: $utc-lightblue;
+    text-align: center;
+    cursor: s-resize;
+  }
+
+  .menu-btn img {
+    vertical-align: middle;
+    height: 50px;
+  }
+
+  .menu-open,
+  .sidebar-menu .open > ul {
+    max-height: 2000px;
+  }
+
+  .sidebar-menu .open > .more i {
+    transform: rotate(-135deg);
+  }
+
+  .more i {
+    color: $utc-gray;
+    transition: transform 0.3s;
+  }
+
+  .more {
+    float: right;
+    min-width: 8%;
+    cursor: move;
+  }
+}
+
+.menu-item-sidemenu {
+  a {
+    background: $white;
+    color: $utc-blue;
+    font-weight: 500;
+    border: 1px solid $utc-gray;
+    &:hover {
+      background-color: $utc-blue;
+      color: $utc-yellow;
+      text-decoration: none;
+    }
+    display: block;
+    padding: 1rem 1.2rem;
+  }
+  .is-active{
+    background-color: $utc-blue !important;
+    color: $utc-yellow;
+    text-decoration: none;
+  }
+}

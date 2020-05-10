@@ -1,0 +1,73 @@
+@import "../../variables";
+
+.college-engineering-computer-sciencetopvid {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-bottom: 20px;
+}
+
+.college-engineering-computer-sciencemenu-overlay {
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+}
+
+.college-engineering-computer-sciencetitle-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+}
+.college-engineering-computer-sciencetitle-overlay h1 {
+    /* font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    color: $white;
+    font-size: 5vw;
+    line-height: 7vw;
+    text-shadow: $text-shadow;
+}
+
+
+ul.college-engineering-computer-scienceinline > li, ol.college-engineering-computer-scienceinline > li {
+    display: inline-block;
+    zoom: 1;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.college-engineering-computer-scienceundergrad-btn:hover {
+    text-indent: 0;
+    background: $utc-darkyellow;
+    color: $white;
+  }
+.college-engineering-computer-scienceinline {
+
+    display: flex;
+    justify-content: center;
+    //padding-left: 5px;
+    //padding-right: 5px;
+    list-style-type: none;
+    margin: 10px 0 10px 25px;
+
+}
+
+.college-engineering-computer-sciencetop-buffer {
+    margin-top: 10px;
+}
+
+
+.college-engineering-computer-scienceundergrad-btn {
+    background-color: transparent;
+    background-image: none;
+    border: 2px solid $white;
+    border-radius: 0;
+    transition: 0.3s;
+    color: $white;
+}

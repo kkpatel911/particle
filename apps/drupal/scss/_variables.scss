@@ -1,0 +1,59 @@
+// _variables.scc
+//
+// In this file yo can add SCSS variables and use them later in the subtheme.scc,
+// or you can override any of TheMAG variables.
+//
+// To override a certain variable copy the variable from /themes/themag/_src/themag/scss/_variables.scss
+// and paste it in this file. For example, if you'd wish to change a theme primary color,
+// copy the primary color variable and remove the !default flag:
+//
+// Example:
+// Copy the $theme-primary-color: $blue-400 !default;
+// Change it to: $theme-primary-color: green;
+//
+// Now after running compiling the CSS, you can see that the primary
+// theme color is overridden to green.
+//
+
+// Google fonts
+$utc-body: 'Open Sans', 'Helvetica Neue', sans-serif;
+$utc-headings: 'Exo','Helvetica Neue', sans-serif;
+
+// Colors
+$utc-blue: #112e51;
+$utc-blue-2: #205493;
+$utc-blue-3: #4773aa;
+$utc-blue-4: #8ba6ca;
+$utc-blue-5: #011a3a;
+$utc-lightblue: #dde6ee;
+
+$utc-yellow: #fdb736;
+$utc-yellow-2: #fcd68b;
+$utc-lightyellow: #fff1d3;
+$utc-darkyellow: #cc9933;
+
+$utc-darkgray: #57595b;
+$utc-darkgray-2: #333333;
+
+$utc-gray: #c0c9d0;
+$utc-gray-2: #d8dee2;
+$utc-gray-3: #c3c9ce;
+$utc-gray-4: #adb2b6;
+$utc-opaque: rgba(0, 0, 0, 0.6);
+
+// 20191007-mpf-should be able to pull styles from base theme
+$white: #fff;
+$off-white: #f9fbfc;
+$black: #000;
+
+$background-colorone:rgba(0,29,57,0.8);
+$text-shadow: 2px 2px 2px #000, -1px -1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000, 1px 1px 0px #000;
+
+$background-colortwo: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(1, 26, 58, 0));
+$background-colorthree:rgba(0,29,57,0.8);
+
+$gradient-1: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(1, 26, 58, 0));
+
+
+// beginning of global variables
+$visited: #6a2c70;

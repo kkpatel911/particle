@@ -1,0 +1,226 @@
+// UTC Styles for the entire site
+
+@import "../../variables";
+
+
+.ptagwhitespace {
+  margin: 0px;
+}
+// Makes google custom page index visible
+.gsc-cursor-page {
+  background: transparent !important;
+}
+
+body {
+  background-color: $off-white;
+  font-family: $utc-body;
+  color: $utc-darkgray-2;
+  .field--name-field-summary,
+  .field--name-body,
+  .field--name-field-additional-informations {
+    color: inherit;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $utc-headings;
+  font-weight: 700;
+  color: $utc-blue;
+  b,
+  strong {
+    font-weight: 700;
+  }
+}
+
+h5 {
+  font-size: 0.83em;
+}
+
+h6 {
+  font-size: 0.67em;
+}
+
+.block--region-content-header.block--page-title-block .page-title,
+.block--layout-builder.block--page-title-block .page-title {
+  background-color: transparent;
+  border-bottom: 9px solid $utc-yellow;
+  color: $utc-blue;
+  padding-top: 1em;
+  padding-bottom: 15px;
+  padding-right: 0 !important;
+  text-align: center;
+}
+
+.block--region-content-header.block--page-title-block::after,
+.block--region-content-header.block--page-title-block::before,
+.block--layout-builder.block--page-title-block::after,
+.block--layout-builder.block--page-title-block::before {
+  border-top: none;
+}
+
+.block--page-title-block {
+  text-align: center;
+}
+.paragraph--type--gallery-grid {
+  cursor: pointer;
+}
+
+.channel__icon {
+  display: none;
+}
+
+.center-it {
+  display: block;
+  margin: 0 auto;
+}
+
+input[type="search"] {
+  font-size: 1rem !important;
+}
+
+.block--search form input[type="submit"] {
+  background: $utc-yellow;
+  border: 0;
+  border-radius: 0;
+  color: $utc-blue;
+  &:hover {
+    background: $utc-blue;
+    color: $utc-yellow;
+  }
+}
+
+.header__toggleable-account-menu ul.menu.is--active {
+  z-index: 9999;
+}
+
+.teaser__channel,
+.teaser__channel i,
+.teaser__channel a,
+.block--poll {
+  display: none;
+}
+
+.sidebar .well {
+  padding: 0 12px;
+}
+
+.field--name-user-picture {
+  flex-align: start;
+}
+
+.field--name-field-short-bio {
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+}
+
+.teaser__headline--light,
+.teaser__authored--light {
+  text-shadow: 1px 1px 1px $utc-blue, 1px 1px 4px $utc-blue,
+    1px -1px 0 $utc-blue, -1px 1px 0 $utc-blue, 1px 1px 0 $utc-blue;
+}
+
+// text shadows for editor picks area below carousel so headlines are readable
+.teaser--small-compact {
+  .teaser__content {
+    header {
+      .teaser__headline {
+        text-shadow: 1px 1px 1px $utc-blue, 1px 1px 4px $utc-blue,
+          1px -1px 0 $utc-blue, -1px 1px 0 $utc-blue, 1px 1px 0 $utc-blue;
+      }
+    }
+  }
+}
+
+h2.block__title {
+  display: none;
+}
+
+.block--inline-block\:utc-text-block {
+  p {
+    font-weight: 500;
+  }
+}
+
+.block__content p {
+  color: $utc-darkgray-2;
+}
+
+// global link styles
+.node__content,
+.themag-layout  {
+  a {
+    color: $utc-blue-3;
+    border-bottom: 1.5px solid $utc-blue-3;
+    text-decoration: none;
+    //&:visited {
+    //  color: $visited;
+    //  border-bottom: 1.5px solid $visited;
+    //
+    //  &:hover {
+    //    color: $utc-blue;
+    //    border-bottom: 1.5px solid $utc-blue;
+    //    text-decoration: none;
+    //  }
+    //}
+    &:hover {
+      color: $utc-blue;
+      border-bottom: 1.5px solid $utc-blue;
+      text-decoration: none;
+    }
+    &:active {
+      color: $utc-darkyellow;
+      border-bottom: 1.5px solid $utc-darkyellow;
+      text-decoration: none;
+    }
+  }
+}
+
+.node__content,
+.themag-layout {
+  strong > a {
+    font-weight: normal; // gets rid of bolder links when strong wraps a link
+  }
+}
+
+// overrides Line 62 docroot/themes/custom/themag/themes/charm/vendor/bootstrap/scss/_reboot.scss
+[tabindex="-1"]:focus {
+  outline: 3px dotted $utc-blue-2 !important;
+}
+
+// global list styles
+ul {
+  padding: 0 0 0 1em;
+  li {
+    line-height: 1.8em;
+  }
+}
+
+// breadcrumbs
+.node__content,
+.themag-layout {
+  .simple-breadcrumb {
+    a {
+      border-bottom: 0;
+      &:hover {
+        text-decoration: none;
+        border-bottom: 1.5px solid $utc-blue-5;
+      }
+    }
+  }
+}
+
+//.cke_top {
+//  position: sticky !important;
+//  top: -0.5rem !important;
+//}
+
+.contextual-region .contextual .contextual-links a {
+  border-bottom: 0;
+}

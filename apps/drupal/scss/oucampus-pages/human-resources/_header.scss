@@ -1,0 +1,102 @@
+
+@import "../../variables";
+.humanresourcestopvid {
+    background-image: url(https://www.utc.edu/human-resources/images/human-resources-homepage-header.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 350px;
+    background-color: $background-colorone;
+    background-blend-mode: multiply;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-bottom: 20px;
+}
+
+.humanresourcesmenu-overlay {
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+}
+
+#humanresourcesapply-btn {
+    padding: 15px 9px;
+    overflow: hidden;
+    transition: all 1.2s;
+    white-space: nowrap;
+    margin-bottom: 10px;
+    width: 140px;
+    font-size: 24px;
+    background-color: $utc-blue;
+}
+
+.humanresourcesundergrad-btn {
+    background-color: transparent;
+    background-image: none;
+    border: 2px solid $white;
+    border-radius: 0;
+    transition: 0.3s;
+    color: $white;
+}
+.humanresourcestitle-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+}
+ul.humanresourcesinline > li, ol.humanresourcesinline > li {
+    display: inline-block;
+    zoom: 1;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.humanresourcesundergrad-btn:hover {
+    text-indent: 0;
+    background: $utc-darkyellow;
+    color: $white;
+  }
+.humanresourcesinline {
+
+    display: flex;
+    justify-content: center;
+    //padding-left: 5px;
+    //padding-right: 5px;
+    list-style-type: none;
+    margin: 10px 0 10px 25px;
+
+}
+.humanresourcestitle-overlay h1 {
+    /* font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    color: $white;
+    font-size: 5vw;
+    line-height: 7vw;
+    text-shadow: $text-shadow;
+}
+
+.humanresourcestop-buffer {
+    margin-top: 10px;
+}
+
+.humanresourcestitlemenu-overlay {
+    bottom: 0.5% !important;
+    background: $background-colortwo;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+// buttons at the botton
