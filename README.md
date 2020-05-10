@@ -33,29 +33,11 @@ In depth documentation about frontend approach using this project at [Phase2 Fro
 - All Webpack files are fully configurable
 - Simple [Yeoman](http://yeoman.io/) generator for Design System component creation
 
-## Quickstart
-
-Particle builds design systems in dev mode for local hosting, or production mode for optimized asset generation.
-
 ### Quickstart A
 
-1. Simply run:
-
-   ```bash
-   npm create @phase2/particle particle
-   ```
-
-1. Then `cd particle/` and run:
-
-   ```bash
-   npm start
-   ```
-
-### Quickstart B
-
-1.  [Download the latest release](https://github.com/phase2/particle/releases)
-1.  Extract anywhere (i.e. this readme should be at `any/where/particle/README.md`)
-1.  Within the extracted folder run:
+1.  Clone the repo
+2.  Add the folder under drupal custom themes
+1.  Within the folder run:
 
 ```bash
 npm install
